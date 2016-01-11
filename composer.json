@@ -1,0 +1,30 @@
+{
+	"name": "d120de/highlightlocalmod",
+	"type": "phpbb-extension",
+	"description": "This extension highlights local moderators in their forums.",
+	"homepage": "http://www.d120.de",
+	"version": "1.0.1",
+	"time": "2016-01-11",
+	"keywords": ["phpbb", "extension", "highlight local moderator"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Max Weller",
+			"homepage": "http://www.max-weller.de",
+			"email": "mweller@d120.de",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Highlight Local Moderators",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.4-RC1,<3.2.*@dev"
+		}
+  }
+}
