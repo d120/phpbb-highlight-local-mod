@@ -73,9 +73,10 @@ class listener implements EventSubscriberInterface
   #user_data, user_posts
 
   public function modify_user_rank($event) {
+    if (!$this->localMods) return;
     $data = $event['user_data'];
     if (array_search($event["user_data"]["user_id"], $this->localMods) !== false) {
-      $data['user_rank'] = '2';
+      $data['user_rank'] = '38';
     }
     $event['user_data'] = $data;
   }
