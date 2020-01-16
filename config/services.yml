@@ -2,11 +2,11 @@ services:
     d120de\highlightlocalmod.listener:
         class: d120de\highlightlocalmod\event\listener
         arguments:
-            - @request
-            - @template
-            - @user
-            - @auth
-            - @dbal.conn
-            - @config
+            - '@request'
+            - '@template'
+            - '@user'
+            - '@auth'
+            - '@dbal.conn'
+            - '@config'
         tags:
             - { name: event.listener }
